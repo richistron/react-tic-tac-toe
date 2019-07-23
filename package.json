@@ -4,7 +4,8 @@
   "description": "Simple tic tac toe with react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist; webpack -c webpack.config.js",
+    "serve": "webpack-dev-server -c webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/richistron/react-tic-tac-toe/issues"
   },
-  "homepage": "https://github.com/richistron/react-tic-tac-toe#readme"
+  "homepage": "https://github.com/richistron/react-tic-tac-toe#readme",
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
 }
