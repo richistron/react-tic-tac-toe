@@ -1,14 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 
-class MyComponent extends React.Component {
-  render() {
-    return <div>Hello World</div>;
-  }
-}
- 
 document.body.innerHTML = '<div id="app"></div>';
-
 const rootElement = document.getElementById('app');
 
-ReactDOM.render(<MyComponent />, rootElement);
+ReactDOM.render(<App />, rootElement);
