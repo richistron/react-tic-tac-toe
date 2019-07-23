@@ -1,4 +1,4 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
@@ -12,5 +12,16 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Tic Tac Toe',
     })
-  ]
+  ],
+  module: {
+    rules: [
+      {
+	test: /\.m?js$/,
+	exclude: /(node_modules|bower_components)/,
+	use: {
+	  loader: 'babel-loader'
+	}
+      }
+    ]
+  }
 }
