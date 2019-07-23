@@ -1,0 +1,19 @@
+{
+  "name": "react-tic-tac-toe",
+  "version": "1.0.0",
+  "description": "Simple tic tac toe with react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richistron/react-tic-tac-toe.git"
+  },
+  "author": "Ricardo Rivas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richistron/react-tic-tac-toe/issues"
+  },
+  "homepage": "https://github.com/richistron/react-tic-tac-toe#readme"
+}
